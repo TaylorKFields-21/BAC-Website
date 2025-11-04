@@ -182,3 +182,14 @@ section{
     color: var(--red);
  }
 
+@media (min-width:320px){
+    body{
+        max-width: 420px;
+    }
+    nav ul{
+      gap: 20px;
+    }
+    nav li{
+        font-size: 14px;
+    }
+}
