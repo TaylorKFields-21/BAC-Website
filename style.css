@@ -1,0 +1,184 @@
+/**** CSS RESET ****/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/********** ROOT *************/
+:root{
+ --light-green: #84994F;
+ --green: #5D866C;
+ --dark-green: #254336;
+ --sand: #FFE797;
+ --yellow: #FCB53B;
+ --red: #A72703;
+ --cream: #E6D8C3;
+ --off-white: #F5F5F0;
+}
+ html{
+   background-color: #F5F5F0;
+   opacity: 0.8;
+   background-image:  linear-gradient(#A72703 1px, transparent 1px), linear-gradient(to right, #A72703 1px, #F5F5F0 1px);
+   background-size: 20px 20px;
+ 
+ }
+ body{
+	 max-width: 950px;  
+	 margin: 0 auto; 
+	 
+}
+
+/********* NAV *********/
+nav ul {
+  background-color: #F5F5F0;
+  opacity: 0.8;  
+  background-image:  linear-gradient(#A72703 1px, transparent 1px), linear-gradient(to right, #a72703a2 1px, #F5F5F0 1px);
+  list-style: none;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+nav a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: var(--red);
+}
+/*********** Hero **********/
+.hero img{
+width: 100%;
+border: 3px solid var(--dark-green);
+
+}
+.logo{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+}
+.logo img{
+    width: 200px;
+}
+.logo h1 {
+  text-align: center;
+  padding-bottom: 60px;
+  font-size: 2.2rem;
+}
+
+/************* WELCOME *************/
+section{
+    width: 100%;
+    margin-top: 8px;
+    background-color: var(--off-white);
+    border: 3px solid var(--dark-green);
+}
+ .welcome h2{
+    font-size: 1.8em;
+    padding-top: 20px;
+    padding-left: 10px;
+    color: var(--red);
+    font-weight: bold;
+ }
+ .welcome p{
+   padding: 15px;
+   font-size: 1.2em;
+
+ }
+ /********* Upcoming ***********/
+ .upcoming h2{ 
+    font-size: 1.8em;
+    padding-top: 20px;
+    padding-left: 10px;
+    color: var(--red);
+    font-weight: bold;
+ }
+ .upcoming p{
+   padding: 15px;
+   font-size: 1.2em;
+ }
+ .images{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; 
+    justify-items: center;
+    padding-bottom: 20px;
+ }
+ .images img{
+    width: 200px;
+    height: 250px;
+    border: 3px solid var(--yellow);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+ }
+
+ /*********** Footer *************/
+ footer{
+    background-color: #F5F5F0;
+    opacity: 0.8;  
+    background-image:  linear-gradient(#A72703 1px, transparent 1px), linear-gradient(to right, #a72703a2 1px, #F5F5F0 1px);
+    padding: 20px;
+ }
+ .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+ footer p{
+    font-size: 1em;
+    text-align: center;
+ }
+ footer a{
+    padding: 20px;
+    text-decoration: none;
+    color: var(--red);
+ }
+
